@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego De Número Magico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>Data Connect</h2>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="proyectos.html">Proyectos</a></li>
+  </ul>
+</nav>
+
+<section class="game-container">
+
+  <center>
+<h1>🎯 Adivina el Número </h1>
+
+<p class="sub">Elige un número del 1 al 10</p>
+
+  </center>
+  
+
+  <div class="card game-card">
+
+    <button class="btn big" onclick="generarNumero()">🎲 preciona aqui primero</button>
+
+    <div class="input-group">
+      <input type="number" id="numero" placeholder="Tu número">
+      <button class="btn intentar" onclick="intentar()">dale aqui para adivinar</button>
+    </div>
+
+
+    
+    <div class="acciones">
+      <button class="btn reset" onclick="reiniciar()">Reiniciar</button>
+    </div>
+
+    <p id="mensaje"></p>
+    <p id="intentos"></p>
+
+    <div class="barra">
+      <div class="progreso" id="barra"></div>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p> Data Connect ©  </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  
